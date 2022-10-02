@@ -1,0 +1,51 @@
+SHUTTING DOWN system
+
+halt - brings the system down immediately
+
+int 0 - powers off the system using predefined scripts to synchronize and clean up the sytem prior to shutting down
+
+int 6 - reboots the system by shutting it down completely and then restarting int
+
+poweroff - shuts down the system by powering off
+
+reboot - reboots the system
+
+shutdown - shuts down the system
+
+
+MANAGING FILE system
+
+eg:- -rw-r--r--
+
+-  - regular file such as an ASCII text file, binary executable, or hard link
+
+b - Block special file. Block input/output device file such as a physical hard drive.
+
+c - character special file. raw input/output device file such as a physical hard drive
+
+d -  directory file that contains a listing of other files and directories
+
+l - symbolic link file. links on any regular file.
+
+p - named pipe. A mechanism for interprocess communication
+
+s - socket used for interprocess communication.
+
+
+
+counting words in a file 
+
+[ wc filename ] 
+
+
+DIRECTORIES 
+
+[ cd - ]  - to go in your last directory, you can use the following command
+
+
+creating parent directories
+
+[ mkdir -p /tmp/amrood/test ] - if parent directory does not exist then its throws an error when you try to put another directory or file inside it. use -p with mkdir to avoid this
+
+
+

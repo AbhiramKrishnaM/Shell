@@ -1,3 +1,4 @@
+----------------------------------------------------------------
 SHUTTING DOWN system
 
 halt - brings the system down immediately
@@ -12,7 +13,7 @@ reboot - reboots the system
 
 shutdown - shuts down the system
 
-
+----------------------------------------------------------------
 MANAGING FILE system
 
 eg:- -rw-r--r--
@@ -37,7 +38,7 @@ counting words in a file
 
 [ wc filename ] 
 
-
+-----------------------------------------------------------------
 DIRECTORIES 
 
 [ cd - ]  - to go in your last directory, you can use the following command
@@ -46,6 +47,44 @@ DIRECTORIES
 creating parent directories
 
 [ mkdir -p /tmp/amrood/test ] - if parent directory does not exist then its throws an error when you try to put another directory or file inside it. use -p with mkdir to avoid this
+
+------------------------------------------------------------------
+FILE Permissions
+
+[ chmod ]
+
+symbolic mode
+
++  - adds the designated permissions to a file or directory
+
+- - removes the designated permissions from a file or directory
+
+= - sets the designated permissions
+
+
+Absolute permission
+
+0 	No permission 	---
+1 	Execute permission 	--x
+2 	Write permission 	-w-
+3 	Execute and write permission: 1 (execute) + 2 (write) = 3 	-wx
+4 	Read permission 	r--
+5 	Read and execute permission: 4 (read) + 1 (execute) = 5 	r-x
+6 	Read and write permission: 4 (read) + 2 (write) = 6 	rw-
+7 	All permissions: 4 (read) + 2 (write) + 1 (execute) = 7 	rwx
+
+
+
+
+
+chown − The chown command stands for "change owner" and is used to change the owner of a file.
+
+chgrp − The chgrp command stands for "change group" and is used to change the group of a file.
+
+eg - [ $ chown amrood testfile ]
+
+
+NOTE − The super user, root, has the unrestricted capability to change the ownership of any file but normal users can change the ownership of only those files that they own.
 
 
 

@@ -115,3 +115,55 @@ ENVIRONMENT Variables
 
 12 	UID: Expands to the numeric user ID of the current user, initialized at the shell startup.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+BASIC Utilities
+
+[ pr option(s) filename(s) ]
+
+
+Sr.No. 	Option & Description
+1 	-k   Produces k columns of output
+
+2 	-d   Double-spaces the output (not on all pr versions)
+
+3 	-h "header"  Takes the next item as a report header
+
+4 	-t  Eliminates the printing of header and the top/bottom margins
+
+5 	-l PAGE_LENGTH  Sets the page length to PAGE_LENGTH (66) lines. The default number of lines of text is 56
+
+6 	-o MARGIN Offsets each line with MARGIN (zero) spaces
+
+7 	-w PAGE_WIDTH Sets the page width to PAGE_WIDTH (72) characters for multiple text-column output only
+
+
+Sending EMAIL
+
+[ $mail [-s subject] [-c cc-addr] [-b bcc-addr] to-addr ]
+
+Sr.No. 	Option & Description
+1 	-s Specifies subject on the command line.
+
+2 	-c Sends carbon copies to the list of users. List should be a commaseparated list of names.
+
+3 	-b Sends blind carbon copies to list. List should be a commaseparated list of names.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PIPES AND FILTERS
+
+eg:- [ ls -l | grep "Aug" ]
+
+
+Sr.No. 	Option & Description
+1 	-v Prints all lines that do not match pattern.
+
+2 	-n Prints the matched line and its line number.
+
+3 	-l Prints only the names of files with matching lines (letter "l")
+
+4 	-c Prints only the count of matching lines.
+
+5 	-i Matches either upper or lowercase.
